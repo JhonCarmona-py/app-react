@@ -8,7 +8,7 @@ import PresentacionAprendiz from './components/Precentacionaprendiz.jsx';
 
 function App() {
   function saludar(){
-    alert("Sapo")
+    alert("Bienvenido a nuestro portal de formacion");
   }
 
   return (
@@ -18,48 +18,54 @@ function App() {
       <Navbar />
       <main id="inicio">
         <h2>Bienvenido a nuestro portal de formacion</h2>
-        <button onClick = {saludar}>haz click aqui</button>
+        <button onClick = {saludar}>Bienvenida</button>
 
+          <div className="contenedor">
+            <section id="cursos">
+              <h2>Nuestros cursos</h2>
+              <p>ofrecemos una variedad de cursos para desarrollar tus habilidades</p>
+              
+              <Curso
+              nombre = "Desarrollo web"
+              description = "aprende a crear paginas web modernas y atractivas"
+              />
 
-        <section id="cursos">
-          <h2>Nuestros cursos</h2>
-          <p>ofrecemos una variedad de cursos para desarrollar tus habilidades</p>
-          
-          <Curso
-          nombre = "Desarrollo web"
-          description = "aprende a crear paginas web modernas y atractivas"
-          />
+              <Curso
+              nombre = "Base de datos"
+              description = "aprende a gestionar y manipular base de datos"
+              />
 
-           <Curso
-          nombre = "Base de datos"
-          description = "aprende a gestionar y manipular base de datos"
-          />
+              <Curso
+              nombre = "Inteligencia artificial"
+              description = "Aprende a desarrollar soluciones basadas en inteligencia artificial"
+              />
 
-           <Curso
-          nombre = "Inteligencia artificial"
-          description = "Aprende a desarrollar soluciones basadas en inteligencia artificial"
-          />
+              <Curso
+              nombre = "Programacion con Java"
+              description = "Aprende los conocimientos basicos de Java"
+              />
 
-          <Curso
-          nombre = "Programacion con Java"
-          description = "Aprende los conocimientos basicos de Java"
-          />
+              <Curso
+              nombre = "Programacion Python"
+              description = "Aprende a desarrollar soluciones de software con python"
+              />
 
-          <Curso
-          nombre = "Programacion Python"
-          description = "Aprende a desarrollar soluciones de software con python"
-          />
-         
+              <section id ="contacto">
 
-        </section>
-        <section id ="contacto">
+              <h2>Contactanos</h2>
+              <p>Si tienes alguna pregunta o deseas mas informacion, no dudes en contactarnos</p>
+            
+              </section>
 
-          <h2>Contactanos</h2>
-          <p>Si tienes alguna pregunta o deseas mas informacion, no dudes en contactarnos</p>
-        
-        </section>
+            
 
-        <Registro_aprendiz/> 
+            </section>
+            <secttion className="registro-aprendiz">
+              <Registro_aprendiz/> 
+            </secttion>
+            
+
+          </div>
         <PresentacionAprendiz/>
       </main>
 

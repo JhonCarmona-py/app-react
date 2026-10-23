@@ -1,13 +1,7 @@
+import './Navbar.css'
 function Navbar() {
     return (
-        <nav style={{
-            display:'flex',
-            backgroundColor: '#000802',
-            justifyContent: 'space-around',
-            alignItems: 'center',
-            padding: '10px',
-
-        }}>
+        <nav className="navbar">
             
                 <p>Inicio</p>
                 <p>Cursos</p>
